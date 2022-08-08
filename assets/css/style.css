@@ -1,0 +1,64 @@
+body{
+    background-image : url("../images/ALL_PAGES_BACKGROUND.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size : cover;
+    overflow : hidden;
+}
+#timer_div{
+    top : 75px;
+    color: white;
+    font-size: 3vw;
+}
+@media screen and (max-width : 630px){
+    #timer_div {
+        font-size : 20px;
+    }
+}
+@keyframes start-btn-animation{
+    0% { font-size : 2.3vw;}
+    50% {font-size : 2.8vw;}
+    100% {font-size : 2.3vw;}
+}
+.start-btn{
+    background : #93b73a;
+    color : white;
+    font-size : 30px;
+    padding : 5px 30px;
+    letter-spacing: 5px;
+    margin-right: 60px;
+    margin-top: 310px;
+    animation-name : start-btn-animation;
+    animation-duration : 1.5s;
+    animation-iteration-count: infinite;
+}
+.start-btn:hover{
+    color : white;
+}
+.item {
+    width : 70%;
+    cursor : pointer;
+}
+.item:hover {
+    filter : brightness(0.9);
+}
+.back-map-img {
+    width : 17vw;
+    cursor : pointer;
+}
+.back-map-img:hover {
+    filter : brightness(0.9);
+}
+.cursor-default {
+    cursor : default;
+}
+
+.ui-widget-header{
+    border: 1px solid #3e47ac;
+    background: #474747;
+    color: #00ffff;
+}
+.ui-widget-overlay {
+    background: black;
+    opacity: 0.7;
+}
